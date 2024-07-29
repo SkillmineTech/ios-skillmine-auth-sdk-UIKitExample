@@ -1,19 +1,20 @@
-//
-//  ViewController.swift
-//  UIKitDemo
-//
-//  Created by Nagaraj V Rao on 29/07/24.
-//
-
 import UIKit
+import SkillmineAuthSDK
+import WebKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIKitOAuthPresentable {
 
+    var token: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        getToken()
     }
-
-
+    
+    func getToken() {
+        presentAuthenticator(urlString: "https://nightly-accounts-api.complyment.com/authz-srv/authz", clientId: "236b91c8-b2f0-4891-a83c-f358a109a843", redirectUri: "http://localhost:3000") { token in
+            self.token = token
+        }
+    }
+    
 }
-

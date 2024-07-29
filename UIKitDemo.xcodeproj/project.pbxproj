@@ -13,6 +13,7 @@
 		C718B63E2C576971006FF0BD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C718B63D2C576971006FF0BD /* Base */; };
 		C718B6402C576973006FF0BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C718B63F2C576973006FF0BD /* Assets.xcassets */; };
 		C718B6432C576973006FF0BD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C718B6422C576973006FF0BD /* Base */; };
+		C718B64C2C5769F9006FF0BD /* SkillmineAuthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = C718B64B2C5769F9006FF0BD /* SkillmineAuthSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C718B64C2C5769F9006FF0BD /* SkillmineAuthSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = UIKitDemo;
+			packageProductDependencies = (
+				C718B64B2C5769F9006FF0BD /* SkillmineAuthSDK */,
+			);
 			productName = UIKitDemo;
 			productReference = C718B6332C576970006FF0BD /* UIKitDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C718B62A2C576970006FF0BD;
+			packageReferences = (
+				C718B64A2C5769F9006FF0BD /* XCRemoteSwiftPackageReference "ios-skillmine-auth-sdk" */,
+			);
 			productRefGroup = C718B6342C576970006FF0BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C718B64A2C5769F9006FF0BD /* XCRemoteSwiftPackageReference "ios-skillmine-auth-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SkillmineTech/ios-skillmine-auth-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C718B64B2C5769F9006FF0BD /* SkillmineAuthSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C718B64A2C5769F9006FF0BD /* XCRemoteSwiftPackageReference "ios-skillmine-auth-sdk" */;
+			productName = SkillmineAuthSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C718B62B2C576970006FF0BD /* Project object */;
 }

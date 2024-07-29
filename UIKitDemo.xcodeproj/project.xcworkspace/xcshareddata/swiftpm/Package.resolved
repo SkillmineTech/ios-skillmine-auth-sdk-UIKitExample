@@ -1,0 +1,15 @@
+{
+  "originHash" : "294abc7925dbc7d98595eb1fe13db4bcb4b1c34be1b3cd16688ceecf71e74309",
+  "pins" : [
+    {
+      "identity" : "ios-skillmine-auth-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SkillmineTech/ios-skillmine-auth-sdk",
+      "state" : {
+        "branch" : "main",
+        "revision" : "985bf4234adf81d4a94fb350bcfb0ae8fa1a2645"
+      }
+    }
+  ],
+  "version" : 3
+}
